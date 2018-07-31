@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/* Styles for forcing columns to rows */
+@media  (max-width : 586px) {
+.desktopOnly {
+	width: 0;
+	display: none !important;
+}
+.mobileOnly {
+	display: block !important; /* Visually Hidden */
+	width: 320px !important; /* Visually Hidden */
+	/*  height: 100% !important; interferes on Safari with scaling, however is needed for Firefox  */
+	height: auto !important;
+	overflow: visible !important; /* Visually Hidden */
+	position: static !important; /* Visually Hidden */
+	min-height: 100% !important;
+	max-height: inherit !important;
+	line-height: normal !important;
+	font-size: 0 !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
+
+@media (max-width: 480px) {
+.desktopOnly {
+	width: 0;
+	display: none !important;
+}
+.mobileOnly {
+	display: block !important; /* Visually Hidden */
+	width: 320px !important; /* Visually Hidden */
+	/*  height: 100% !important; interferes on Safari with scaling, however is needed for Firefox  */
+	height: auto !important;
+	overflow: visible !important; /* Visually Hidden */
+	position: static !important; /* Visually Hidden */
+	min-height: 100% !important;
+	max-height: inherit !important;
+	line-height: normal !important;
+	font-size: 0 !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
+
+@media (min-width : 587px) {
+.desktopOnly {
+	display: block !important;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0 !important;
+}
+.mobileOnly {
+	display: none !important; /* Visually Hidden */
+	width: 0; /* Visually Hidden */
+}
+}
