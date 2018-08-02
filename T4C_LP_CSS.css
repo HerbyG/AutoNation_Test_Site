@@ -56,14 +56,15 @@
 	margin-right: auto;
 	font-size: 0 !important;
 	padding-bottom: 20px;
+	
+
 }
 .mobileOnly {
 	display: none !important; /* Visually Hidden */
 	width: 0; /* Visually Hidden */
 }
 }
-
-.section-title {
+h1{
 	margin: 0;
     padding: 20px;
     border: 0;
@@ -71,6 +72,7 @@
 	font-weight: 500;
 	color:#5c5c5c;
     vertical-align: baseline;
-	text-align: center;
-}
+	text-align: center;}
+
+
 
