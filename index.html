@@ -1,54 +1,348 @@
 <!doctype html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width">
 <meta charset="utf-8">
-<title>TEXT "NEWRIDE" TO 91000</title>
-<link href="T4C_LP_CSS.css" rel="stylesheet" type="text/css">
+<title>Untitled Document</title>
+<style type="text/css">
+@charset "utf-8";
+
+/* CSS Document */
+            /* Styles for forcing columns to rows */
+@media (max-width : 586px) {
+.desktopOnly {
+    width: 100% !important;
+    display: block !important;
+}
+.mobileOnly {
+    display: block !important; /* Visually Hidden */
+    width: 320px !important; /* Visually Hidden */
+    /*  height: 100% !important; interferes on Safari with scaling, however is needed for Firefox  */
+    height: auto !important;
+    overflow: visible !important; /* Visually Hidden */
+    position: static !important; /* Visually Hidden */
+    min-height: 100% !important;
+    max-height: inherit !important;
+    line-height: normal !important;
+    font-size: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+	.headline{
+		font-family: Arial;
+    font-size: 22px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    color: #ef8ab3;
+    font-weight: bold;
+    text-transform: uppercase;
+		
+	}
+	.divTableCell {
+    border: 0px solid #999999;
+    display: table-cell;
+    padding-top: 3px;
+	padding-left: 20px;
+	text-align: left;
+	font-family: Arial;
+	color: #5c5c5c;
+		font-size: 13px;
+}
+	.divTableHead {
+    border: 0px solid #999999;
+    display: table-cell;
+    padding: 3px 10px;
+	text-align: center;
+		font-weight: bold;
+		font-family: Arial;
+		color: #5c5c5c;
+		text-transform: uppercase;
+		font-size: 16px;
+}
+	.sdpHeadline{
+		background-color: #ef8ab3;
+		color: #ffffff;
+		font-family: Arial;
+		font-weight: normal;
+		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+.desktopOnly {
+    width: 100%;
+    display: block !important;
+}
+.mobileOnly {
+    display: block !important; /* Visually Hidden */
+    width: 320px !important; /* Visually Hidden */
+    /*  height: 100% !important; interferes on Safari with scaling, however is needed for Firefox  */
+    height: auto !important;
+    overflow: visible !important; /* Visually Hidden */
+    position: static !important; /* Visually Hidden */
+    min-height: 100% !important;
+    max-height: inherit !important;
+    line-height: normal !important;
+    font-size: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+	.headline{
+		font-family: Arial;
+    font-size: 22px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    color: #ef8ab3;
+    font-weight: bold;
+    text-transform: uppercase;
+		
+	}
+	.divTableCell {
+    border: 0px solid #999999;
+    display: table-cell;
+    padding-top: 3px;
+	padding-left: 40px;
+	text-align: left;
+	font-family: Arial;
+	color: #5c5c5c;
+		font-size: 13px;
+}
+	.divTableHead {
+    border: 0px solid #999999;
+    display: table-cell;
+    padding: 3px 3px;
+	text-align: center;
+		font-weight: bold;
+		font-family: Arial;
+		color: #5c5c5c;
+		text-transform: uppercase;
+		font-size: 15px;
+}
+	.sdpHeadline{
+		background-color: #ef8ab3;
+		color: #ffffff;
+		font-family: Arial;
+		font-weight: normal;
+		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 20px;
+	}
+}
+
+@media (min-width : 587px) {
+.desktopOnly {
+    display: block !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0 !important;
+    padding-bottom: 20px;
+}
+.mobileOnly {
+    display: none !important; /* Visually Hidden */
+    width: 0; /* Visually Hidden */
+}
+	
+	.headline {
+    font-family: Arial;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    color: #ef8ab3;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+	
+	.divTableCell {
+    border: 0px solid #999999;
+    display: table-cell;
+    padding-top: 3px;
+	padding-left: 40px;
+	text-align: left;
+	font-family: Arial;
+	color: #5c5c5c;
+		font-size: 13px;
+}
+	.divTableHead {
+    border: 0px solid #999999;
+    display: table-cell;
+    padding: 3px 10px;
+	text-align: center;
+		font-weight: bold;
+		font-family: Arial;
+		color: #5c5c5c;
+		text-transform: uppercase;
+		font-size: 16px;
+}
+	.sdpHeadline{
+		background-color: #ef8ab3;
+		color: #ffffff;
+		font-family: Arial;
+		font-weight: normal;
+		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 28px;
+	}
+}
+h1 {
+    margin: 0;
+    border: 0;
+}
+
+.bodyCopy {
+    font-family: Arial;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #5c5c5c;
+    text-align: justify;
+}
+.subHeadline {
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    color: #ef8ab3;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.divTable {
+    display: table;
+    width: 80%;
+	padding-top: 40px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+.divTableRow {
+    display: table-row;
+}
+.divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+}
+
+	
+.divTableHeading {
+    background-color: #ffffff;
+    display: table-header-group;
+    font-weight: bold;
+	font-family: Arial;
+	text-align: center
+}
+.divTableFoot {
+    background-color: #ffffff;
+    display: table-footer-group;
+    font-weight: bold;
+}
+.divTableBody {
+    display: table-row-group;
+}
+	.button {
+    
+}
+
+.button:hover {
+    background-color:#FF4609; /* Green */
+    color: white;
+}
+	.button {
+    background-color: #ff6633; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+		-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+		font-family: Arial;
+		font-weight: bold;
+		margin-left: auto;
+		margin-right: auto;
+		width: 300px;
+}
+	
+</style>
 </head>
 
 <body>
-	<h1>Get a Pre-Approved Auto Loan in Seconds!</h1>
-
-<!--Desktop  Begins-->
-<div class="desktopOnly"> 
-	<h1>Get a Pre-Approved Auto Loan in Seconds!</h1>
-  <!--Desktop Hero-->
-  <div><img alt="TEXT NEWRIDE TO 91000" src="images/image1-hero.png" ></div>
-  <!--Desktop Hero--> 
-  
-  <!--Desktop Benefits-->
-  <div><img alt="Benefits" src="images/image2-benefits.png" ></div>
-  <!--Desktop Benefits--> 
-  
-  <!--Desktop How-To-->
-  <div><img alt="How-To" src="images/image3-howto.png"></div>
-  <!--Desktop How-To--> 
-  
+<div><a href="#"><img class="desktopOnly" src="http://images.harmony.epsilon.com/ContentHandler/images?id=8b1ed1e1-dace-4d31-9389-1c1624dfea82" alt="Save on Taxes" /></a></div>
+<div class="headline">Did you know most states offer a tax credit towards new vehicle when you trade in your existing vehicle?
+  <div style="padding-top: 20px; color:#5c5c5c;font-weight: normal;">IT'S PRETTY SIMPLE</div>
 </div>
-<!--Desktop  Ends--> 
-
-<!--Mobile Begins-->
-<div class="mobileOnly "> 
-  
-  <!--Mobile Hero-->
-  <div><a href="sms:91000;?&amp;body=NEWCAR" style="cursor: default; text-decoration: none;"><img alt="TEXT NEWRIDE TO 91000" src="images/image1-hero-mobile.png" ></a></div>
-  <!--Mobile Hero--> 
-  
-  <!--Mobile Benefits-->
-  <div><a href="sms:91000;?&amp;body=NEWCAR" style="cursor: default; text-decoration: none;"><img alt="Benefits" src="images/image2-benefits-mobile.png"></a></div>
-  <!--Mobile Benefits--> 
-  
-  <!--Mobile How-To-->
-  <div><a href="sms:91000;?&amp;body=NEWCAR" style="cursor: default; text-decoration: none;"><img alt="How-To" src="images/image3-howto-mobile.png"></a>
-	  
+<div class="bodyCopy"> For example, if you are buying a new car for $32,860 and AutoNation will give you $10,000 for your trade, you will only pay sales tax on the $22,860 difference. If sales tax in your state is 7 percent, the tax would be $1,600. Without the trade value sales tax on the purchase increases to $2,300. </div>
+<div>
+	<div class="subHeadline">Please find a sample deal for Tennessee below.</div></div>
+ 
+<div class="divTable">
+  <div class="divTableBody">
+    <div  class="divTableRow">
+      <div  class="divTableHead">With Trade-In</div>
+      <div class="divTableHead">Without Trade-In</div>
+    </div>
+  </div>
+</div>
+<div class="divTable" style="padding-top: 10px;">
+  <div class="divTableBody">
+    <div  class="divTableRow">
+      <div  class="divTableCell">$32,860.00 (Vehicle You Want To Buy)</div>
+ 
+	  <div class="divTableCell">$32,860.00 (Vehicle You Want To Buy)</div>
+      
+    </div>
+	  <div  class="divTableRow">
+      <div  class="divTableCell" style="text-decoration: underline;">- $10,000 (Trade-In Vehicle)</div>
+ 
+		<div  class="divTableCell" style="text-decoration: underline;">x&nbsp; &nbsp; <span>7% (Your Sales Tax Rate)</span></div>
+      
+    </div>
+	   <div  class="divTableRow">
+      <div  class="divTableCell">$22,860 (You Pay)</div>
+ 
+		<div class="divTableCell">&nbsp;$2,300.00 (In Taxes)</div>
+      
+    </div>
+	  <div  class="divTableRow">
+      <div  class="divTableCell" style="text-decoration: underline;">x&nbsp; &nbsp; <span>7% (Your Sales Tax Rate)</span></div>
+ 
+		<div class="divTableCell"></div>
+      
+    </div>
+	  <div  class="divTableRow">
+      <div  class="divTableCell" >&nbsp;$1,600.00 (In Taxes)</div>
+ 
+		<div class="divTableCell"></div>
+      
+    </div>
+  </div>
+</div>
+<div class="subHeadline" style="color: #5c5c5c">You Save $700 on Taxes
+</div>
+	<div  style="width: 400;padding-top: 50px;text-align: center;"><a href="https://www.autonation.com/sell-my-car">
 	
-	 
-	</div>
-  <!--Mobile How-To--> 
-  
-</div>
-<!--Mobile Ends-->
-
+	<button align="center" style="margin-left: auto;margin-right: auto;" class="button">VALUE MY TRADE</button></a></div><div style="padding-top: 60px;">
+	<div class="sdpHeadline">Or Browse New Vehicles Near You!</div></div>
+	
 </body>
 </html>
