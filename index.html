@@ -9,49 +9,67 @@
 /* CSS Document */
             /* Styles for forcing columns to rows */
 @media (max-width : 586px) {
-	
-	
-	
-.desktopOnly {
-    width: 100% !important;
-    display: block !important;
+	.button {
+    
+		background-image: linear-gradient(to right, #e61464, #ef73ab);
+    border: none;
+    color: white;
+    padding-left: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+		-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+		font-family: Arial;
+		font-weight: bold;
+		margin-left: auto;
+		margin-right: auto;
+		width: 200px;
+		border-radius: 20px;
+		height: 40px;
+		
 }
-.mobileOnly {
-    display: block !important; /* Visually Hidden */
-    width: 320px !important; /* Visually Hidden */
-    /*  height: 100% !important; interferes on Safari with scaling, however is needed for Firefox  */
-    height: auto !important;
-    overflow: visible !important; /* Visually Hidden */
-    position: static !important; /* Visually Hidden */
-    min-height: 100% !important;
-    max-height: inherit !important;
-    line-height: normal !important;
-    font-size: 0 !important;
+.desktopOnly {
+    display: block !important;
+    width: 100%;
+	max-width: 586px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 0 !important;
     padding-bottom: 20px;
 }
-	.headline{
-		font-family: Arial;
+.mobileOnly {
+    display: none !important; /* Visually Hidden */
+    width: 0; /* Visually Hidden */
+}
+	
+	.headline {
+    font-family: Arial;
     font-size: 22px;
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
-    color: #ef8ab3;
+    color: #0a3453;
     font-weight: bold;
-    text-transform: uppercase;
+		letter-spacing: -0.57px;
+		line-height: 25px;
 		
-	}
+}
+	
 	.divTableCell {
     border: 0px solid #999999;
     display: table-cell;
-    padding-top: 3px;
-	padding-left: 20px;
+    padding: 3px;
+	
+		margin-left: auto;
+		margin-right: auto;
 	text-align: left;
 	font-family: Arial;
 	color: #5c5c5c;
-		font-size: 13px;
+		font-size: 14px;
+		
 }
 	.divTableHead {
     border: 0px solid #999999;
@@ -64,119 +82,268 @@
 		text-transform: uppercase;
 		font-size: 16px;
 }
-	.sdpHeadline{
-		background-color: #ef8ab3;
-		color: #ffffff;
-		font-family: Arial;
-		font-weight: normal;
-		padding: 20px;
+	.divTable1 {
+    display: table;
+    width: 100%;
 		margin-left: auto;
 		margin-right: auto;
-		text-align: center;
-		font-size: 20px;
-	}
+}
 	.divTable {
     display: table;
-    width: 300px;
-	padding-top: 40px;
+		text-align: center;
+    width: 75%;
+		max-width: 586px;
 	
 	margin-left: auto;
 	margin-right: auto;
 }
-	.divTable1 {
-    display: table;
-    width: 100%;
-		margin-left: 20px;
-		margin-top: 10px;
-	
-	
-	
+	.subHeadline{
+		background-color: #ffffff;
+		
+		color: #5c5c5c;
+		font-family: Arial;
+		font-weight: bold;
+		padding: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 18px;
+		line-height: 20px;
+		letter-spacing: -0.47px;
+	}
+	.bodyCopy {
+    font-family: Arial;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #5c5c5c;
+    text-align: left;
+		letter-spacing: -0.02px;
+		line-height: 20px;
 }
+	.terHeadline{
+		background-color: #ffffff;
+		
+		color: #5c5c5c;
+		font-family: Arial;
+		font-weight: bold;
+		padding: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 22px;
+		line-height: 25px;
+		letter-spacing: -0.57px;
+	}
+	.divTableRow {
+    display: table-row;
+		max-width: 586px;
+		width: 100%;
+}
+.divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+}
+
+	
+.divTableHeading {
+    background-color: #ffffff;
+    display: table-header-group;
+    font-weight: bold;
+	font-family: Arial;
+	text-align: center
+}
+.divTableFoot {
+    background-color: #ffffff;
+    display: table-footer-group;
+    font-weight: bold;
+}
+.divTableBody {
+    display: table-row-group;
+}
+	
+
 }
 
 @media (max-width: 480px) {
-.desktopOnly {
-    width: 100%;
-    display: block !important;
+	.button {
+    
+		background-image: linear-gradient(to right, #e61464, #ef73ab);
+    border: none;
+    color: white;
+    padding-left: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+		-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+		font-family: Arial;
+		font-weight: bold;
+		margin-left: auto;
+		margin-right: auto;
+		width: 200px;
+		border-radius: 20px;
+		height: 40px;
+		
 }
-.mobileOnly {
-    display: block !important; /* Visually Hidden */
-    width: 320px !important; /* Visually Hidden */
-    /*  height: 100% !important; interferes on Safari with scaling, however is needed for Firefox  */
-    height: auto !important;
-    overflow: visible !important; /* Visually Hidden */
-    position: static !important; /* Visually Hidden */
-    min-height: 100% !important;
-    max-height: inherit !important;
-    line-height: normal !important;
-    font-size: 0 !important;
+.desktopOnly {
+    display: block !important;
+    width: 100%;
+	max-width: 480px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 0 !important;
     padding-bottom: 20px;
 }
-	.headline{
-		font-family: Arial;
+.mobileOnly {
+    display: none !important; /* Visually Hidden */
+    width: 0; /* Visually Hidden */
+}
+	
+	.headline {
+    font-family: Arial;
     font-size: 22px;
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
-    color: #ef8ab3;
+    color: #0a3453;
     font-weight: bold;
-    text-transform: uppercase;
+		letter-spacing: -0.57px;
+		line-height: 25px;
 		
-	}
+}
+	
 	.divTableCell {
     border: 0px solid #999999;
     display: table-cell;
-    padding-top: 3px;
+    padding: 3px;
+	
+		margin-left: auto;
+		margin-right: auto;
 	text-align: left;
 	font-family: Arial;
 	color: #5c5c5c;
-		font-size: 14px;
+		font-size: 12px;
 }
 	.divTableHead {
     border: 0px solid #999999;
     display: table-cell;
-    padding: 3px 3px;
+    padding: 3px 10px;
 	text-align: center;
 		font-weight: bold;
 		font-family: Arial;
 		color: #5c5c5c;
 		text-transform: uppercase;
-		font-size: 15px;
-}
-	.sdpHeadline{
-		background-color: #ef8ab3;
-		color: #ffffff;
-		font-family: Arial;
-		font-weight: normal;
-		padding: 20px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		font-size: 20px;
-	}
-	.divTable {
-    display: table;
-    width: 400px;
-	padding-top: 40px;
-	
-	margin-left: auto;
-	margin-right: auto;
+		font-size: 16px;
 }
 	.divTable1 {
     display: table;
     width: 100%;
-		margin-left: 20px;
-		margin-top: 10px;
-	
-	
-	
+		margin-left: auto;
+		margin-right: auto;
 }
+	.divTable {
+    display: table;
+		text-align: center;
+    width: 75%;
+		max-width: 460px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+	.subHeadline{
+		background-color: #ffffff;
+		
+		color: #5c5c5c;
+		font-family: Arial;
+		font-weight: bold;
+		padding: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 18px;
+		line-height: 20px;
+		letter-spacing: -0.47px;
+	}
+	.bodyCopy {
+    font-family: Arial;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #5c5c5c;
+    text-align: left;
+		letter-spacing: -0.02px;
+		line-height: 20px;
+}
+	.terHeadline{
+		background-color: #ffffff;
+		
+		color: #5c5c5c;
+		font-family: Arial;
+		font-weight: bold;
+		padding: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 22px;
+		line-height: 25px;
+		letter-spacing: -0.57px;
+	}
+	.divTableRow {
+    display: table-row;
+		max-width: 480px;
+		width: 75%;
+}
+.divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+}
+
+	
+.divTableHeading {
+    background-color: #ffffff;
+    display: table-header-group;
+    font-weight: bold;
+	font-family: Arial;
+	text-align: center
+}
+.divTableFoot {
+    background-color: #ffffff;
+    display: table-footer-group;
+    font-weight: bold;
+}
+.divTableBody {
+    display: table-row-group;
+}
+	
+
 }
 
 @media (min-width : 587px) {
+	.button {
+    
+		background-image: linear-gradient(to right, #e61464, #ef73ab);
+    border: none;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+		-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+		font-family: Arial;
+		font-weight: bold;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		border-radius: 30px;
+		
+}
 .desktopOnly {
     display: block !important;
     width: 100%;
@@ -193,14 +360,16 @@
 	
 	.headline {
     font-family: Arial;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
-    color: #ef8ab3;
+    color: #0a3453;
     font-weight: bold;
-    text-transform: uppercase;
+		letter-spacing: -1.3px;
+		line-height: 44px;
+		
 }
 	
 	.divTableCell {
@@ -214,6 +383,8 @@
 	font-family: Arial;
 	color: #5c5c5c;
 		font-size: 14px;
+		width: 100px; 
+		padding-left: 20px;
 }
 	.divTableHead {
     border: 0px solid #999999;
@@ -231,56 +402,54 @@
     width: 600px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 10px;
 }
 	.divTable {
     display: table;
     width: 100%;
-	padding-top: 40px;
 	
 	margin-left: auto;
 	margin-right: auto;
 }
-	.sdpHeadline{
-		background-color: #ef8ab3;
-		color: #ffffff;
+	.subHeadline{
+		background-color: #ffffff;
+		
+		color: #5c5c5c;
 		font-family: Arial;
-		font-weight: normal;
+		font-weight: bold;
 		padding: 20px;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
 		font-size: 28px;
+		line-height: 31px;
+		letter-spacing: -0.72px;
 	}
-}
-h1 {
-    margin: 0;
-    border: 0;
-}
-
-.bodyCopy {
+	.bodyCopy {
     font-family: Arial;
-    font-size: 20px;
-    padding-top: 40px;
+    font-size: 14px;
+    padding-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
     color: #5c5c5c;
     text-align: left;
+		letter-spacing: -0.02px;
+		line-height: 20px;
 }
-.subHeadline {
-    font-family: Arial;
-    font-size: 24px;
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 40px;
-    color: #ef8ab3;
-    font-weight: normal;
-    text-transform: uppercase;
-}
-
-
-.divTableRow {
+	.terHeadline{
+		background-color: #ffffff;
+		
+		color: #5c5c5c;
+		font-family: Arial;
+		font-weight: bold;
+		padding: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 22px;
+		line-height: 25px;
+		letter-spacing: -0.57px;
+	}
+	.divTableRow {
     display: table-row;
 }
 .divTableHeading {
@@ -306,28 +475,23 @@ h1 {
 }
 	
 
+}
+h1 {
+    margin: 0;
+    border: 0;
+}
+
+
+
+
+
+
 .button:hover {
-    background-color:#FF4609; /* Green */
+    background-color:#0a3453; /* Green */
     color: white;
 	cursor:pointer;
 }
-	.button {
-    background-color: #ff6633; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-		-webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-		font-family: Arial;
-		font-weight: bold;
-		margin-left: auto;
-		margin-right: auto;
-		width: 300px;
-}
+	
 	
 </style>
 </head>
@@ -335,24 +499,24 @@ h1 {
 <body><div class="desktopOnly">
 <div><a href="https://www.autonation.com/sell-my-car" target="_blank"><img class="desktopOnly" src="http://images.harmony.epsilon.com/ContentHandler/images?id=8b1ed1e1-dace-4d31-9389-1c1624dfea82" alt="Save on Taxes" /></a></div>
 <div class="headline">Did you know most states offer a tax credit towards new vehicle when you trade in your existing vehicle?
-  <div style="padding-top: 20px; color:#5c5c5c;font-weight: normal;">IT'S PRETTY SIMPLE</div>
+  <div class="subHeadline" style="padding-top: 20px;color: #ef8ab3">It's Pretty Simple!</div>
 </div>
 <div class="bodyCopy"> For example, if you are buying a new car for $32,860 and AutoNation will give you $10,000 for your trade, you will only pay sales tax on the $22,860 difference. If sales tax in your state is 7 percent, the tax would be $1,600. Without the trade value sales tax on the purchase increases to $2,300. </div>
 <div>
 	<div class="subHeadline">Please find a sample deal for Tennessee below.</div></div>
  
-<div class="divTable1">
-	<div class="divTable">
-  <div class="divTableBody">
-    <div  class="divTableRow">
-      <div  class="divTableHead">With Trade-In</div>
+<div class="divTable1" >
+	<div class="divTable" >
+  <div class="divTableBody" >
+    <div  class="divTableRow" >
+      <div  class="divTableHead" >With Trade-In</div>
       <div class="divTableHead">Without Trade-In</div>
     </div>
   </div>
 </div>
 	</div>
 	<div class="divTable1">
-<div class="divTable" style="padding-top: 10px;">
+<div class="divTable bodyCopy" style="padding-top: 10px;">
   <div class="divTableBody">
     <div  class="divTableRow">
       <div  class="divTableCell">$32,860.00 (Vehicle You Want To Buy)</div>
@@ -386,13 +550,41 @@ h1 {
     </div>
   </div>
 </div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	</div>
 <div class="subHeadline" style="color: #5c5c5c">You Save $700 on Taxes
 </div>
-	<div  style="width: 400;padding-top: 50px;text-align: center;"><a href="https://www.autonation.com/sell-my-car" target="_blank">
 	
-	<button align="center" style="margin-left: auto;margin-right: auto;" class="button">VALUE MY TRADE</button></a></div><div style="padding-top: 60px;">
-	<div class="sdpHeadline">Or Browse New Vehicles Near You!</div></div>
-	</div>
+	<div class="divTable" style="padding-top: 10px;width: 75%;">
+  <div class="divTableBody">
+    <div  class="divTableRow">
+      <div  class="divTableCell" align="center" style="text-align: center; width: 100px;padding-right: 20px;" ><a href="https://www.autonation.com/sell-my-car" target="_blank" style="text-align: center;">
+	
+	<button align="center" style="margin-left: auto;margin-right: auto;" class="button">VALUE MY TRADE</button></a></div>
+ 
+	  <div class="divTableCell" ><a href="https://www.autonation.com/sell-my-car" target="_blank">
+	
+	<button align="center" style="margin-left: auto;margin-right: auto;" class="button">VALUE MY TRADE</button></a></div>
+      
+    </div>
+	  
+      
+    </div>
+  </div>
+	<div style="padding-top: 20px; width: 100%;">
+	<div class="subHeadline" style="background-color: #69768c;color: #ffffff;" >Or Browse New Vehicles Near You!</div></div>
+</div>
+	
+	
+	
+	
 </body>
 </html>
