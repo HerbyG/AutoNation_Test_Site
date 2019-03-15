@@ -1,571 +1,175 @@
 <!doctype html>
 <html>
 <head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
-<title>Untitled Document</title>
 <style type="text/css">
-@charset "utf-8";
-
-/* CSS Document */
-            /* Styles for forcing columns to rows */
-@media (max-width : 586px) {
-	.button {
-    
-		background-image: linear-gradient(to right, #e61464, #ef73ab);
-    border: none;
-    color: white;
-    padding-left: 0px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-		-webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-		font-family: Arial;
-		font-weight: bold;
-		margin-left: auto;
-		margin-right: auto;
-		width: 200px;
-		border-radius: 20px;
-		height: 40px;
-		
-}
-.desktopOnly {
+@media (max-width: 768px) {
+.row3 {
     display: block !important;
-    width: 100%;
-	max-width: 586px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0 !important;
-    padding-bottom: 20px;
+    margin: -24px !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
 }
-.mobileOnly {
-    display: none !important; /* Visually Hidden */
-    width: 0; /* Visually Hidden */
+.col {
+    background-color: #fafafa!important;
 }
-	
-	.headline {
-    font-family: Arial;
-    font-size: 22px;
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    color: #0a3453;
-    font-weight: bold;
-		letter-spacing: -0.57px;
-		line-height: 25px;
-		
+.rowIcon {
+    display: grid !important;
+    grid-template-columns: 1fr 90% !important;
 }
-	
-	.divTableCell {
-    border: 0px solid #999999;
-    display: table-cell;
-    padding: 3px;
-	
-		margin-left: auto;
-		margin-right: auto;
-	text-align: left;
-	font-family: Arial;
-	color: #5c5c5c;
-		font-size: 18px;
-		
+.imgCar {
+    display: none !important;
 }
-	.divTableHead {
-    border: 0px solid #999999;
-    display: table-cell;
-    padding: 3px 10px;
-	text-align: center;
-		font-weight: bold;
-		font-family: Arial;
-		color: #5c5c5c;
-		text-transform: uppercase;
-		font-size: 16px;
-		
-}
-	.divTable1 {
-    display: table;
-    width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-}
-	.divTable {
-    display: table;
-		text-align: center;
-    width: 100%;
-		max-width: 586px;
-	
-	margin-left: auto;
-	margin-right: auto;
-}
-	.subHeadline{
-		background-color: #ffffff;
-		
-		color: #5c5c5c;
-		font-family: Arial;
-		font-weight: bold;
-		padding: 15px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		font-size: 18px;
-		line-height: 20px;
-		letter-spacing: -0.47px;
-	}
-	.bodyCopy {
-    font-family: Arial;
-    font-size: 12px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-		padding-bottom: 
-    color: #5c5c5c;
+
+.col2 {
+    float: left;
+    padding: 0px;
     text-align: left;
-		letter-spacing: -0.02px;
-		line-height: 20px;
 }
-	.terHeadline{
-		background-color: #ffffff;
-		
-		color: #e61464;
-		font-family: Arial;
-		font-weight: bold;
-		padding: 15px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		font-size: 22px;
-		line-height: 25px;
-		letter-spacing: -0.57px;
-	}
-	.divTableRow {
-    display: table-row;
-		max-width: 586px;
-		width: 100%;
-}
-.divTableHeading {
-    background-color: #EEE;
-    display: table-header-group;
-}
-
-	
-.divTableHeading {
-    background-color: #ffffff;
-    display: table-header-group;
-    font-weight: bold;
-	font-family: Arial;
-	text-align: center
-}
-.divTableFoot {
-    background-color: #ffffff;
-    display: table-footer-group;
-    font-weight: bold;
-}
-.divTableBody {
-    display: table-row-group;
-}
-	
-
-}
-
-@media (max-width: 480px) {
-	.button {
-    
-		background-image: linear-gradient(to right, #e61464, #ef73ab);
-    border: none;
-    color: white;
-    padding-left: 0px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-		-webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-		font-family: Arial;
-		font-weight: bold;
-		margin-left: auto;
-		margin-right: auto;
-		width: 140px;
-		border-radius: 20px;
-		height: 40px;
-		
-}
-.desktopOnly {
-    display: block !important;
-    width: 100%;
-	max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0 !important;
-    padding-bottom: 20px;
-}
-.mobileOnly {
-    display: none !important; /* Visually Hidden */
-    width: 0; /* Visually Hidden */
-}
-	
-	.headline {
-    font-family: Arial;
-    font-size: 22px;
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    color: #0a3453;
-    font-weight: bold;
-		letter-spacing: -0.57px;
-		line-height: 25px;
-		
-}
-	
-	.divTableCell {
-    border: 0px solid #999999;
-    display: table-cell;
-    padding: 3px;
-	
-		margin-left: auto;
-		margin-right: auto;
-	text-align: left;
-	font-family: Arial;
-	color: #5c5c5c;
-		font-size: 12px;
-}
-	.divTableHead {
-    border: 0px solid #999999;
-    display: table-cell;
-    padding: 3px 10px;
-	text-align: center;
-		font-weight: bold;
-		font-family: Arial;
-		color: #5c5c5c;
-		text-transform: uppercase;
-		font-size: 16px;
-}
-	.divTable1 {
-    display: table;
-    width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-}
-	.divTable {
-    display: table;
-		text-align: center;
-    width: 100%;
-		max-width: 460px;
-	
-	margin-left: auto;
-	margin-right: auto;
-}
-	.subHeadline{
-		background-color: #ffffff;
-		
-		color: #5c5c5c;
-		font-family: Arial;
-		font-weight: bold;
-		padding: 15px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		font-size: 18px;
-		line-height: 20px;
-		letter-spacing: -0.47px;
-	}
-	.bodyCopy {
-    font-family: Arial;
-    font-size: 12px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #5c5c5c;
-    text-align: left;
-		letter-spacing: -0.02px;
-		line-height: 20px;
-}
-	.terHeadline{
-		background-color: #ffffff;
-		
-		color: #e61464;
-		font-family: Arial;
-		font-weight: bold;
-		padding: 10px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		font-size: 22px;
-		line-height: 25px;
-		letter-spacing: -0.57px;
-	}
-	.divTableRow {
-    display: table-row;
-		max-width: 480px;
-		width: 100%;
-		text-align: center;
-}
-.divTableHeading {
-    background-color: #EEE;
-    display: table-header-group;
-}
-
-	
-.divTableHeading {
-    background-color: #ffffff;
-    display: table-header-group;
-    font-weight: bold;
-	font-family: Arial;
-	text-align: center
-}
-.divTableFoot {
-    background-color: #ffffff;
-    display: table-footer-group;
-    font-weight: bold;
-}
-.divTableBody {
-    display: table-row-group;
-}
-	
-
-}
-
-@media (min-width : 587px) {
-	.button {
-    
-		background-image: linear-gradient(to right, #e61464, #ef73ab);
-    border: none;
-    color: white;
-    padding: 20px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-		-webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-		font-family: Arial;
-		font-weight: bold;
-		margin-left: auto;
-		margin-right: auto;
-		width: 280px;
-		min-width: ;
-		border-radius: 30px;
-		
-}
-.desktopOnly {
-    display: block !important;
-    width: 100%;
-	max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0 !important;
-    padding-bottom: 20px;
-}
-.mobileOnly {
-    display: none !important; /* Visually Hidden */
-    width: 0; /* Visually Hidden */
-}
-	
-	.headline {
-    font-family: Arial;
-    font-size: 40px;
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    color: #0a3453;
-    font-weight: bold;
-		letter-spacing: -1.3px;
-		line-height: 44px;
-		
-}
-	
-	.divTableCell {
-    border: 0px solid #999999;
-    display: table-cell;
-    padding-top: 3px;
-	
-		margin-left: auto;
-		margin-right: auto;
-	text-align: left;
-	font-family: Arial;
-	color: #5c5c5c;
-		font-size: 14px;
-		width: 100px; 
-		padding-left: 20px;
-}
-	.divTableHead {
-    border: 0px solid #999999;
-    display: table-cell;
-    padding-bottom: 3px;
-	text-align: center;
-		width: 50%;
-		font-weight: bold;
-		font-family: Arial;
-		color: #5c5c5c;
-		text-transform: uppercase;
-		font-size: 26px;
-}
-	.divTable1 {
-    display: table;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		
-		text-align: center;
-}
-	.divTable {
-    display: table;
-    width: 100%;
-	
-	margin-left: auto;
-	margin-right: auto;
-}
-	.subHeadline{
-		background-color: #ffffff;
-		
-		color: #5c5c5c;
-		font-family: Arial;
-		font-weight: bold;
-		padding: 20px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		font-size: 28px;
-		line-height: 31px;
-		letter-spacing: -0.72px;
-	}
-	.bodyCopy {
-    font-family: Arial;
-    font-size: 18px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-	padding-bottom: 20px;
-    color: #5c5c5c;
-    text-align: left;
-		letter-spacing: -0.02px;
-		line-height: 20px;
-}
-	.terHeadline{
-		background-color: #ffffff;
-		
-		color: #e61464;
-		font-family: Arial;
-		font-weight: bold;
-		padding-bottom: 15px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		font-size: 22px;
-		line-height: 25px;
-		letter-spacing: -0.57px;
-	}
-	.divTableRow {
-    display: table-row;
-		width: 600px;
-	
-}
-.divTableHeading {
-    background-color: #EEE;
-    display: table-header-group;
-}
-
-	
-.divTableHeading {
-    background-color: #ffffff;
-    display: table-header-group;
-    font-weight: bold;
-	font-family: Arial;
-	text-align: center
-}
-.divTableFoot {
-    background-color: #ffffff;
-    display: table-footer-group;
-    font-weight: bold;
-}
-.divTableBody {
-    display: table-row-group;
-}
-	
-
 }
 h1 {
-    margin: 0;
-    border: 0;
+    font-family: Arial;
+    font-size: 40px;
+    font-kerning: -1.3px;
+    letter-spacing: -1.3px;
+    color: #0A3453;
+    font-weight: 900;
 }
-
-
-
-
-
-
-.button:hover {
-    background-color:#0a3453; /* Green */
-    color: white;
-	cursor:pointer;
+h2 {
+    font-family: Arial;
+    font-size: 28px;
+    font-kerning: -.72px;
+    letter-spacing: -.72px;
+    color: #0A3453;
+    font-weight: bold;
+    text-align: center;
 }
-	
-	
+h3 {
+    font-family: Arial;
+    font-size: 22px;
+    font-kerning: -.57px;
+    letter-spacing: -.57px;
+    color: #0A3453;
+    font-weight: bold;
+}
+p {
+    font-family: Arial;
+    font-size: 14px;
+    font-kerning: -.02px;
+    letter-spacing: -.02px;
+    color: #0A3453;
+}
+span.blue {
+    background: #F3F3F3;
+    border: 4px solid #0A3453;
+    border-radius: 1.8em;
+    -moz-border-radius: 1.8em;
+    -webkit-border-radius: 1.8em;
+    color: #0A3453;
+    display: inline-block;
+    font-weight: 900;
+    line-height: 2em;
+    margin-right: 15px;
+    text-align: center;
+    width: 2em;
+    font-size: 28px;
+}
+.row3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.rowIcon {
+    display: grid;
+ grid-template-columns: .10fr 1fr 1fr;
+}
+.row2 {
+    display: grid;
+ grid-template-columns: .1fr 1fr;
+}
+.col2 {
+    float: left;
+    padding: 20px;
+    text-align: left;
+}
+.col {
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+.icons {
+    width: 40px;
+    height: auto;
+}
+.imgCar {
+    width: 70%;
+	float: right;
+}
 </style>
+<link href="css/bootstrap-4.2.1.css" rel="stylesheet" type="text/css">
 </head>
-
-<body><div class="desktopOnly">
-<div><a href="https://www.autonation.com/sell-my-car" target="_blank"><img class="desktopOnly" src="http://images.harmony.epsilon.com/ContentHandler/images?id=8b1ed1e1-dace-4d31-9389-1c1624dfea82" alt="Save on Taxes" /></a></div>
-<div class="headline">Did you know most states offer a tax credit towards a new vehicle when you trade in your existing vehicle?
-
-</div>
-<div class="bodyCopy"> For example, if you're buying a new car for <strong>$20,132</strong> and AutoNation is giving you <strong>$13,500</strong> for your trade, you will only pay sales tax on the <strong>$6,632</strong> difference. If the sales tax in your state is <strong>6%</strong>, the tax would be <strong>$398</strong>. Without the trade-in value, sales tax on the purchase increases to <strong>$1,207</strong>. </div>
-
-	<div class="terHeadline">AutoNation saved this Miami customer <strong>$809</strong> in taxes on their new 2018 Chevrolet Cruze!</div>
-	 <!--<div class="divTableHead" >With Trade-In</div>
-      <div class="divTableHead">Without Trade-In</div>-->
- 
-
-  <div class="divTable1">
-<div class="divTable " style="padding-top: 10px;">
-  <div class="divTableBody">
-    <div  class="divTableRow">
-		<div class="divTableHead" style="color: green" >With Trade-In</div>
-		<div class="divTableHead" >Without Trade-In</div>
-      
- 
-	 
-		
+<body>
+<h1 align="center" style="color: #69768C">Sell My Car Today</h1>
+<h3 align="center" style="margin-top: -20px;padding-bottom: 20px;color: #69768C;">The free and easy way to appraise your car’s value.</h3>
+<div style="background-color: #fafafa;padding-top: 10px; ">
+  <h2 align="center"><span>Sell or Trade-In Your Car. No purchase necessary.</span></h2>
+  <div class="row3" >
+    <div class="col"> <img alt="No Hassle" height="80" width="80"  class="icons" src="https://www1.qaautonation.com/~/media/ee7f4384fcaf474eb02b90685dd92df6.ashx" />
+      <h3>Selling your car with AutoNation is never a hassle. </h3>
+      <p>Sell your car to AutoNation - and you don’t have to buy one from us. Other dealers don’t want to talk to you, unless you’re buying one of their cars. So, if you just want to sell your vehicle, we’re ready when you are. Use our easy car value estimator tool above to find your car value and get an easy appraisal of what it’s worth before selling or trading-in. </p>
     </div>
-	  <div  class="divTableRow">
-      <div  class="divTableCell" style="text-decoration: underline;"><a href="https://www.autonation.com/sell-my-car" target="_blank"><img class="desktopOnly" src="~/media/8cbafc5dca584f608839fb6d92607ba8.ashx" alt="Tax Saving with Trade-In" /></a></div>
- 
-		<div  class="divTableCell" style="text-decoration: underline;"><a href="https://www.autonation.com/sell-my-car" target="_blank"><img class="desktopOnly" src="~/media/b95db9d4b8534389bce30a3bdc5bfde8.ashx" alt="Save on Taxes" /></a></div>
-      
+    <div class="col"> <img alt="Dollar Sign Icon" height="80" width="80" class="icons" src="https://www1.qaautonation.com/~/media/b6db72ee258f44b08049f26c7b97f6ea.ashx" />
+      <h3>A free certified offer in minutes. </h3>
+      <p>In our stores, online or on the phone, AutoNation will give you a certificate with the exact dollar offer for your car or truck in as fast as 30 minutes. </p>
     </div>
-	   
-      
+    <div class="col"> <img alt="Calendar" height="74" width="80" class="icons" src="https://www1.qaautonation.com/~/media/b7fa7c0dd33c4dc8b8538453612b21d7.ashx" />
+      <h3>Offer good for 7 days or 500 additional miles. </h3>
+      <p> Other dealers and websites will give you an estimate.  At AutoNation, your certified offer is good for cash and guaranteed for 7 days or 500 miles. In fact, you can redeem your offer at any AutoNation store. </p>
     </div>
   </div>
 </div>
-	
-	
-<div class="subHeadline" style="color: #e61464">That's $809 in Tax Savings!</div>
-
-	<div class="divTable" style="padding-top: 10px;">
-  <div class="divTableBody">
-    <div  class="divTableRow">
-      <div  class="divTableCell" align="center" style="text-align: center;" ><a href="https://www.autonation.com/sell-my-car" target="_blank" style="text-align: center;">
-	
-	<button align="center" style="margin-left: auto;margin-right: 20px;" class="button">VALUE MY TRADE</button></a></div>
- 
-	  <div class="divTableCell" align="center" style="text-align: center;" ><a href="https://www.autonation.com/cars-for-sale" target="_blank">
-	
-	<button align="center" style="margin-left:auto; margin-right: auto;" class="button">FIND A CAR</button></a></div>
-      
-    </div>
-	  
-      
-    </div>
-  </div>
-	<div style="padding-top: 60px; width: 100%;"></div>
-	<!--<div class="subHeadline" style="background-color: #69768c;color: #ffffff;" >Check Out These Vehicles Near You!</div>-->
+<div  style="background-color: #ffffff;padding-top: 20px;">
+  <h2 align="center" style="background-color:#ffffff; ">How it works</h2>
 </div>
-	
-	
-	
-	
+<div class="row2" style="background-color: #ffffff;">
+  <div class="col2">
+    <h3><span class="blue">1</span></h3>
+  </div>
+  <div class="col2" >
+    <h3>Tell us about your car</h3>
+    <p>Use your license plate or VIN to easily provide your vehicle information.  Then share photos or describe the physical condition of your vehicle. </p>
+  </div>
+</div>
+<div class="rowIcon" style="background-color: #ffffff;">
+  <div class="col2">
+    <h3><span class="blue">2</span></h3>
+  </div>
+  <div class="col2">
+    <h3>Get a certified offer within 30 minutes</h3>
+    <p>AutoNation will contact you with a competitive offer. Our offers are good for 7 days or 500 miles and remain the same whether you sell or trade in.</p>
+  </div>
+  <div class="col2 imgCar"><img src="https://www2.qaautonation.com/~/media/images/Autonation/HomePage/OpenHtmlBanner/bluetruckxsmob.png" class="imgCar"  alt=""/></div>
+</div>
+<div class="row2" style="background-color: #ffffff;">
+  <div class="col2">
+    <h3><span class="blue">3</span></h3>
+  </div>
+  <div class="col2">
+    <h3>Redeem our offer at any AutoNation store</h3>
+    <p>We’ll do an inspection of your car to verify its condition. Once everything checks out, you can accept payment, apply to a trade in, or consider our offer for 7 days.</p>
+  </div>
+</div>
+<div style="background-color: #fafafa;padding: 5px;padding: 20px">
+  <h2>Benefits of a Trade-In</h2>
+  <h3>Save time and effort</h3>
+  <p> Selling your car privately can be a hassle. You have to do things like run classified ads, field phone calls and have strangers come to your house for test drives. Then of course, you’ll have to negotiate. </p>
+  <p>You also need to ensure your car is maintained and all parts are working. This is a worry and expense on your part, including fixing brakes, tires and other pricey items. Trading-in with us avoids all these inconveniences. </p>
+  <h3>Lower how much you need to finance</h3>
+  <p>When you trade in your vehicle, AutoNation will be essentially purchasing your car from you. We will apply the purchase amount to the total price of the vehicle you want to purchase. This means that you could significantly lower monthly payments for a financed vehicle. </p>
+  <h3>Save on Taxes</h3>
+  <p>When you trade in your vehicle when purchasing another, you only pay sales tax on the difference between the trade in value and the price of the new car - that means more money for you! </p>
+</div>
 </body>
 </html>
